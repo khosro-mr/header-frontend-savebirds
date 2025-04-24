@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveBirds App - Header Demo</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    .active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .logo {
+      max-height: 40px;
+      width: auto;
+    }
+
+    .site-name {
+      font-size: 1.2rem;
+    }
+
+    .nav-link {
+      margin: 0 0.5rem;
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: #28a745;
+    }
+
+    @media (max-width: 992px) {
+      .navbar-nav {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      
+      .d-flex {
+        margin-top: 0.5rem;
+        justify-content: center;
+      }
+    }
+
+    /* Demo page styles */
+    .main-content {
+      padding: 60px 20px;
+      background-color: #f8f9fa;
+      text-align: center;
+      min-height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header py-2 bg-white shadow-sm">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- Left Section: Logo and Site Name -->
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="images/logo.png" alt="SaveBirds Logo" class="logo me-2" height="40">
+          <span class="site-name fw-bold">SaveBirds</span>
+        </a>
+
+        <!-- Hamburger Menu for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarContent" aria-controls="navbarContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Center Section: Navigation Menu -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Metrics</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Presence-Absence Data</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Bird Atlas Generator</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Ongoing Projects</a>
+            </li>
+          </ul>
+
+          <!-- Right Section: Action Button -->
+          <div class="d-flex">
+            <a href="#" class="btn btn-success rounded-pill px-4">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <h1>SaveBirds App Header Demo</h1>
+    <p class="mt-4">This page demonstrates the header component for SaveBirds.app</p>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
